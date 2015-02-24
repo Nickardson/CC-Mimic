@@ -4,11 +4,11 @@
 //  GravityScore and 1lann
 //
 
-
+var hash = location.hash.substring(1).split('x');
 
 var config = {
-	"width": 51,
-	"height": 19,
+	"width": Number(hash[0]) || 51,
+	"height": Number(hash[1]) || 19,
 
 	"cellWidth": 12,
 	"cellHeight": 18,
